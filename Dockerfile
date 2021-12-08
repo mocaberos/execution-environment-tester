@@ -2,7 +2,7 @@ FROM golang:1.17.4-alpine3.15 AS golang
 
 WORKDIR /app
 COPY . /app
-RUN go build -o execution-environment-tester main.go
+RUN go build -o execution-environment-tester -mod=mod main.go
 
 FROM alpine:3.15
 
