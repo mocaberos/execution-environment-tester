@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# ビルドテスト
+#
+set -e;
+
+docker build -t codebuild:mzk -f Dockerfile .;
